@@ -132,7 +132,7 @@ public class GeneraPC {
                 if (componente[0].equals(codigo)) {
                     boolean yaAgregado = false;
                     for (String[] agregado : computadora.getComponentes()) {
-                        if (agregado != null && agregado[0].equals(codigo)) {
+                        if (agregado != null && agregado[0]  != null && agregado[0].equals(codigo)) {
                             yaAgregado = true;
                             break;
                         }
